@@ -15,27 +15,6 @@ export const profile = {
   }
 };
 
-export const projects: Project[] = [
-  {
-    title: "ethereal mood.",
-    description: "A progressive web application built for me and my partner – tracks mood, multiple graphing capabilites, fully working backend via Supabase.",
-    technologies: ["React", "PostgreSQL", "Supabase", "Vercel", "PWA"],
-    year: "2024",
-    status: "Active",
-    featured: true,
-    type: "private"
-  },
-  {
-    title: "HTB writeups.",
-    description: "Writeups of active machines that I have completed, custom scripts/exploits, methods/tools used...",
-    technologies: ["Markdown", "Security Research"],
-    year: "2024",
-    status: "Coming Soon",
-    featured: false,
-    type: "coming-soon"
-  },
-];
-
 export const interests: Interest[] = [
   {
     category: "Media",
