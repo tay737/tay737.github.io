@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="vite-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#41D1FF" />
+      <stop offset="100%" stop-color="#BD34FE" />
+    </linearGradient>
+    <linearGradient id="vite-bolt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEA83" />
+      <stop offset="100%" stop-color="#FFDD35" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#vite-grad)" d="M29.5 5.5l-13 23a1 1 0 01-1.7 0l-13-23a1 1 0 01.9-1.5h26a1 1 0 01.8 1.5z"/>
+  <path fill="url(#vite-bolt)" d="M19.3 4.2L9.2 16.5h6l-3.2 10.3 11-13.8h-6l2.3-8.8z"/>
+</svg>
