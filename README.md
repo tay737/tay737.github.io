@@ -16,4 +16,5 @@ Attempted to optimise the experience for desktop and mobile devices, to feel as 
 
 <img width="3412" height="1972" alt="image" src="https://github.com/user-attachments/assets/b3c2d402-8b4f-4cec-860a-06bc94897f43" />
 
-This project is for my personal portfolio use and is not intended for redistribution.
+## Disclaimer
+This project is for my personal portfolio use and is not intended for any form of redistribution.
