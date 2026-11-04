@@ -113,7 +113,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
               exit={{ opacity: 0, filter: 'blur(10px)' }}
               transition={{ duration: 1.2, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
               dir="auto"
-              className="text-lg sm:text-xl md:text-2xl text-muted font-normal tracking-tight text-center"
+              className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-normal tracking-tight text-center"
             >
               {greeting.sub}
             </motion.p>

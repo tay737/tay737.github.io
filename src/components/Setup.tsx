@@ -27,7 +27,7 @@ export function Setup() {
                 </div>
                 <div>
                   <h3 className="text-3xl font-semibold tracking-tight">{setup.name}</h3>
-                  <p className="text-xl text-muted font-normal mt-1">{setup.operatingSystem}</p>
+                  <p className="text-xl text-muted-foreground font-normal mt-1">{setup.operatingSystem}</p>
                 </div>
               </div>
             </div>
@@ -39,7 +39,7 @@ export function Setup() {
                   {Object.entries(setup.specs).map(([key, value]) => (
                     <div key={key} className="flex flex-col sm:flex-row py-4 border-b border-border/50 group">
                       <span className="text-base font-medium text-foreground min-w-[160px]">{key}</span>
-                      <span className="text-base text-muted">{value}</span>
+                      <span className="text-base text-muted-foreground">{value}</span>
                     </div>
                   ))}
                 </div>
@@ -52,13 +52,13 @@ export function Setup() {
                     {setup.peripherals.map((peri, i) => (
                       <div key={i} className="flex flex-col sm:flex-row py-4 border-b border-border/50 group items-start gap-4 sm:gap-0">
                         <div className="flex items-center gap-3 min-w-[160px]">
-                          <span className="text-muted">{getIconForPeripheral(peri.type)}</span>
+                          <span className="text-muted-foreground">{getIconForPeripheral(peri.type)}</span>
                           <span className="text-base font-medium text-foreground">{peri.type}</span>
                         </div>
                         <div className="flex flex-col">
-                          <span className="text-base text-muted">{peri.name}</span>
+                          <span className="text-base text-muted-foreground">{peri.name}</span>
                           {peri.description && (
-                            <span className="text-sm text-muted/70 mt-1">{peri.description}</span>
+                            <span className="text-sm text-muted-foreground/70 mt-1">{peri.description}</span>
                           )}
                         </div>
                       </div>

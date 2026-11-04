@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Section } from './Section';
+import { BorderBeam } from './ui/border-beam';
 import { systems } from '../data';
 import { FlagType } from '../types';
-import { Laptop, Terminal as TerminalIcon, Monitor } from 'lucide-react';
+import { Laptop, Monitor } from 'lucide-react';
+import { TerminalIcon } from './animate-ui/icons/terminal';
 
 const getFlagColors = (flag: FlagType) => {
   switch (flag) {
@@ -81,7 +83,7 @@ export function Systems() {
                 )}
                 <span className="relative z-10 flex items-center gap-2">
                   {sys.id.includes('mac') && <Laptop size={14} className={isActive ? 'text-[#1d1d1f]' : 'text-[#86868b]'} />}
-                  {sys.id.includes('vm') && <TerminalIcon size={14} className={isActive ? 'text-[#1d1d1f]' : 'text-[#86868b]'} />}
+                  {sys.id.includes('vm') && <TerminalIcon size={14} animateOnHover className={isActive ? 'text-[#1d1d1f]' : 'text-[#86868b]'} />}
                   {sys.id.includes('pc') && <Monitor size={14} className={isActive ? 'text-[#1d1d1f]' : 'text-[#86868b]'} />}
                   <span>{sys.displayName}</span>
                 </span>
@@ -92,6 +94,13 @@ export function Systems() {
       </div>
 
       <div className="rounded-2xl sm:rounded-3xl overflow-hidden border border-black/10 shadow-[0_20px_50px_rgba(0,0,0,0.14)] bg-[#18181b] text-[#d4d4d8] relative max-w-full">
+        <BorderBeam
+          size={150}
+          duration={16}
+          colorFrom="#5BCEFA"
+          colorTo="#F5A9B8"
+          borderWidth={1.5}
+        />
         <div className="h-10 bg-[#242429] border-b border-white/[0.08] flex items-center px-4 justify-between relative z-10 select-none">
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full bg-[#FF5F56] border border-black/20" />

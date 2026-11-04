@@ -12,22 +12,22 @@ export function About() {
             <span className="text-3xl font-bold relative z-10">{profile.name.charAt(0) !== '[' ? profile.name.charAt(0).toUpperCase() : 'Me'}</span>
           </div>
           <h3 className="text-2xl font-semibold mb-2">{profile.name}</h3>
-          <div className="text-muted text-lg mb-8 flex items-center gap-2">
+          <div className="text-muted-foreground text-lg mb-8 flex items-center gap-2">
             <MapPin size={18} />
             <span>{profile.location}</span>
           </div>
           
           <div className="space-y-4 text-base font-medium">
             <div className="flex items-center gap-3">
-              <Mail size={18} className="text-muted" />
+              <Mail size={18} className="text-muted-foreground" />
               <a href={`mailto:${profile.email}`} className="hover:text-foreground transition-colors">{profile.email}</a>
             </div>
             <div className="flex items-center gap-3">
-              <Github size={18} className="text-muted" />
+              <Github size={18} className="text-muted-foreground" />
               <a href={profile.githubUrl} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">GitHub</a>
             </div>
             <div className="flex items-center gap-3">
-              <Linkedin size={18} className="text-muted" />
+              <Linkedin size={18} className="text-muted-foreground" />
               <a href={profile.linkedinUrl} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">LinkedIn</a>
             </div>
           </div>
@@ -36,10 +36,10 @@ export function About() {
         <div className="md:col-span-8">
           <div className="max-w-3xl">
             <h3 className="text-3xl font-semibold mb-6 tracking-tight text-foreground">Where did it all start?</h3>
-            <p className="text-xl leading-relaxed text-muted mb-12 font-normal tracking-tight">{profile.about.intro}</p>
-            
+            <p className="text-xl leading-relaxed text-muted-foreground mb-12 font-normal tracking-tight">{profile.about.intro}</p>
+
             <h3 className="text-3xl font-semibold mb-6 tracking-tight text-foreground">What am I doing now?</h3>
-            <p className="text-xl leading-relaxed text-muted font-normal tracking-tight">{profile.about.personality}</p>
+            <p className="text-xl leading-relaxed text-muted-foreground font-normal tracking-tight">{profile.about.personality}</p>
           </div>
         </div>
       </div>

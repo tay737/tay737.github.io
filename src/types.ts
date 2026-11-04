@@ -1,16 +1,3 @@
-export type Project = {
-  title: string;
-  description: string;
-  technologies: string[];
-  github?: string;
-  demo?: string;
-  image?: string;
-  year: string;
-  status: string;
-  featured: boolean;
-  type: 'public' | 'private' | 'experiment' | 'coming-soon';
-};
-
 export type Interest = {
   category: string;
   items: {

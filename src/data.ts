@@ -1,4 +1,4 @@
-import { Project, Interest, SystemProfile, SetupProfile } from './types';
+import { Interest, SystemProfile, SetupProfile } from './types';
 
 export const profile = {
   name: "tay",

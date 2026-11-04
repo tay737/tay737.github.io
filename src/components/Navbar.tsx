@@ -1,6 +1,7 @@
 import { useState, useEffect, MouseEvent } from 'react';
 import { motion } from 'motion/react';
 import { Fingerprint, FolderGit2, Terminal, Laptop, Mail } from 'lucide-react';
+import { Dock, DockIcon } from './ui/dock';
 import { profile } from '../data';
 
 interface NavbarProps {
@@ -144,43 +145,41 @@ export function Navbar({ onReplaySplash }: NavbarProps) {
         </button>
       </div>
 
-      <div className="md:hidden fixed bottom-5 left-0 right-0 z-50 flex justify-center pointer-events-none px-4">
-        <nav 
-          aria-label="Mobile Navigation"
-          className="pointer-events-auto flex items-center justify-around gap-1 p-1.5 bg-[#ffffff]/85 backdrop-blur-3xl border border-black/[0.08] rounded-[26px] shadow-[0_12px_36px_rgba(0,0,0,0.12),0_1px_2px_rgba(0,0,0,0.04)] w-full max-w-[390px]"
-        >
-          {navLinks.map((link) => {
-            const Icon = link.icon;
-            const isActive = activeSection === link.id;
+      <div className="md:hidden fixed bottom-5 inset-x-0 z-50 flex justify-center pointer-events-none px-2">
+        <nav aria-label="Mobile Navigation" className="pointer-events-auto">
+          <Dock
+            iconSize={42}
+            iconMagnification={56}
+            iconDistance={120}
+            className="mt-0 h-[62px] gap-1.5 rounded-[26px] border-black/[0.08] bg-white/85 px-2.5 py-2 shadow-[0_12px_36px_rgba(0,0,0,0.12),0_1px_2px_rgba(0,0,0,0.04)] backdrop-blur-3xl"
+          >
+            {navLinks.map((link) => {
+              const Icon = link.icon;
+              const isActive = activeSection === link.id;
 
-            return (
-              <a
-                key={link.id}
-                href={link.href}
-                onClick={(e) => handleNavClick(e, link.href)}
-                className={`relative flex flex-col items-center justify-center flex-1 py-1 px-1 rounded-[20px] transition-all duration-200 ${
-                  isActive ? 'text-[#000000]' : 'text-[#86868b] hover:text-[#1d1d1f]'
-                }`}
-                style={{ minHeight: '46px' }}
-              >
-                {isActive && (
-                  <motion.div
-                    layoutId="mobileNavActivePill"
-                    className="absolute inset-0 bg-black/[0.06] rounded-[20px]"
-                    transition={{ type: "spring", stiffness: 450, damping: 35 }}
-                  />
-                )}
-                <span className="relative z-10 flex flex-col items-center gap-0.5">
-                  <div className={`p-1 rounded-[8px] transition-colors ${isActive ? 'text-[#000000]' : 'text-[#86868b]'}`}>
-                    <Icon size={18} strokeWidth={isActive ? 2.2 : 1.7} />
-                  </div>
-                  <span className={`text-[10px] tracking-tight ${isActive ? 'font-semibold text-[#000000]' : 'font-medium text-[#86868b]'}`}>
-                    {link.name}
-                  </span>
-                </span>
-              </a>
-            );
-          })}
+              return (
+                <DockIcon
+                  key={link.id}
+                  title={link.name}
+                  className={
+                    isActive
+                      ? 'bg-[#1d1d1f] text-white shadow-[0_4px_12px_rgba(0,0,0,0.18)]'
+                      : 'text-[#86868b] hover:bg-black/[0.04] hover:text-[#1d1d1f]'
+                  }
+                >
+                  <a
+                    href={link.href}
+                    onClick={(e) => handleNavClick(e, link.href)}
+                    aria-label={link.name}
+                    aria-current={isActive ? 'page' : undefined}
+                    className="flex h-full w-full items-center justify-center rounded-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5BCEFA]"
+                  >
+                    <Icon size={19} strokeWidth={isActive ? 2.2 : 1.7} />
+                  </a>
+                </DockIcon>
+              );
+            })}
+          </Dock>
         </nav>
       </div>
     </>

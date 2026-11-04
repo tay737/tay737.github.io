@@ -1,0 +1,609 @@
+{
+  "generatedAt": "2026-10-19T04:31:31.655Z",
+  "windowHours": 24,
+  "dashboardUrl": "https://grafana.tay737.co.uk/public-dashboards/98f7f83b26d04f569fe49576d9ccc1a7?from=now-24h&to=now",
+  "total": 1718,
+  "uniqueIps": 65,
+  "countries": 26,
+  "sources": 46,
+  "points": [
+    {
+      "lat": 48.858,
+      "lon": 2.351,
+      "attempts": 330
+    },
+    {
+      "lat": 52.372,
+      "lon": 4.888,
+      "attempts": 270
+    },
+    {
+      "lat": 32.78,
+      "lon": -96.802,
+      "attempts": 163
+    },
+    {
+      "lat": 42.506,
+      "lon": 1.522,
+      "attempts": 143
+    },
+    {
+      "lat": 52.368,
+      "lon": 4.904,
+      "attempts": 121
+    },
+    {
+      "lat": 35.682,
+      "lon": 51.416,
+      "attempts": 105
+    },
+    {
+      "lat": 47.45,
+      "lon": 8.525,
+      "attempts": 66
+    },
+    {
+      "lat": 22.16,
+      "lon": 113.564,
+      "attempts": 34
+    },
+    {
+      "lat": 56.037,
+      "lon": 92.931,
+      "attempts": 32
+    },
+    {
+      "lat": 1.352,
+      "lon": 103.82,
+      "attempts": 30
+    },
+    {
+      "lat": 56.947,
+      "lon": 24.098,
+      "attempts": 26
+    },
+    {
+      "lat": 49.271,
+      "lon": 7.031,
+      "attempts": 21
+    },
+    {
+      "lat": 10.78,
+      "lon": 106.663,
+      "attempts": 20
+    },
+    {
+      "lat": 52.3,
+      "lon": -0.613,
+      "attempts": 19
+    },
+    {
+      "lat": 41.878,
+      "lon": -87.63,
+      "attempts": 18
+    },
+    {
+      "lat": 41.008,
+      "lon": 28.978,
+      "attempts": 18
+    },
+    {
+      "lat": 21.018,
+      "lon": 105.846,
+      "attempts": 18
+    },
+    {
+      "lat": 47.233,
+      "lon": -119.852,
+      "attempts": 16
+    },
+    {
+      "lat": -1.284,
+      "lon": 36.815,
+      "attempts": 16
+    },
+    {
+      "lat": 42.698,
+      "lon": 23.322,
+      "attempts": 16
+    },
+    {
+      "lat": 21.011,
+      "lon": 105.822,
+      "attempts": 16
+    },
+    {
+      "lat": 39.979,
+      "lon": 116.338,
+      "attempts": 16
+    },
+    {
+      "lat": 35.166,
+      "lon": 129.054,
+      "attempts": 16
+    },
+    {
+      "lat": 28.598,
+      "lon": -81.302,
+      "attempts": 14
+    },
+    {
+      "lat": 45.469,
+      "lon": 9.181,
+      "attempts": 14
+    },
+    {
+      "lat": 3.116,
+      "lon": 101.666,
+      "attempts": 14
+    },
+    {
+      "lat": 22.321,
+      "lon": 114.168,
+      "attempts": 14
+    },
+    {
+      "lat": 22.336,
+      "lon": 114.199,
+      "attempts": 14
+    },
+    {
+      "lat": 25.033,
+      "lon": 121.565,
+      "attempts": 14
+    },
+    {
+      "lat": 37.365,
+      "lon": 127.122,
+      "attempts": 14
+    },
+    {
+      "lat": 41.591,
+      "lon": -93.621,
+      "attempts": 12
+    },
+    {
+      "lat": 36.668,
+      "lon": 117.021,
+      "attempts": 10
+    },
+    {
+      "lat": 55.749,
+      "lon": 37.619,
+      "attempts": 8
+    },
+    {
+      "lat": 23.118,
+      "lon": 113.254,
+      "attempts": 8
+    },
+    {
+      "lat": 39.904,
+      "lon": 116.407,
+      "attempts": 8
+    },
+    {
+      "lat": 36.066,
+      "lon": -115.139,
+      "attempts": 7
+    },
+    {
+      "lat": -4.303,
+      "lon": 15.311,
+      "attempts": 6
+    },
+    {
+      "lat": 13.089,
+      "lon": 80.274,
+      "attempts": 6
+    },
+    {
+      "lat": 22.546,
+      "lon": 114.068,
+      "attempts": 6
+    },
+    {
+      "lat": 30.274,
+      "lon": 120.155,
+      "attempts": 6
+    },
+    {
+      "lat": 23.132,
+      "lon": 113.266,
+      "attempts": 4
+    },
+    {
+      "lat": 59.329,
+      "lon": 18.069,
+      "attempts": 2
+    },
+    {
+      "lat": 22.283,
+      "lon": 114.155,
+      "attempts": 2
+    },
+    {
+      "lat": 25.053,
+      "lon": 121.526,
+      "attempts": 2
+    },
+    {
+      "lat": 39.867,
+      "lon": 116.488,
+      "attempts": 2
+    },
+    {
+      "lat": -23.547,
+      "lon": -46.636,
+      "attempts": 1
+    }
+  ],
+  "timeline": [
+    {
+      "at": 1792297891655,
+      "attempts": 37
+    },
+    {
+      "at": 1792299691655,
+      "attempts": 50
+    },
+    {
+      "at": 1792301491655,
+      "attempts": 51
+    },
+    {
+      "at": 1792303291655,
+      "attempts": 85
+    },
+    {
+      "at": 1792305091655,
+      "attempts": 69
+    },
+    {
+      "at": 1792306891655,
+      "attempts": 42
+    },
+    {
+      "at": 1792308691655,
+      "attempts": 97
+    },
+    {
+      "at": 1792310491655,
+      "attempts": 18
+    },
+    {
+      "at": 1792312291655,
+      "attempts": 12
+    },
+    {
+      "at": 1792314091655,
+      "attempts": 20
+    },
+    {
+      "at": 1792315891655,
+      "attempts": 22
+    },
+    {
+      "at": 1792317691655,
+      "attempts": 29
+    },
+    {
+      "at": 1792319491655,
+      "attempts": 26
+    },
+    {
+      "at": 1792321291655,
+      "attempts": 46
+    },
+    {
+      "at": 1792323091655,
+      "attempts": 24
+    },
+    {
+      "at": 1792324891655,
+      "attempts": 38
+    },
+    {
+      "at": 1792326691655,
+      "attempts": 59
+    },
+    {
+      "at": 1792328491655,
+      "attempts": 38
+    },
+    {
+      "at": 1792330291655,
+      "attempts": 37
+    },
+    {
+      "at": 1792332091655,
+      "attempts": 26
+    },
+    {
+      "at": 1792333891655,
+      "attempts": 39
+    },
+    {
+      "at": 1792335691655,
+      "attempts": 36
+    },
+    {
+      "at": 1792337491655,
+      "attempts": 53
+    },
+    {
+      "at": 1792339291655,
+      "attempts": 13
+    },
+    {
+      "at": 1792341091655,
+      "attempts": 20
+    },
+    {
+      "at": 1792342891655,
+      "attempts": 36
+    },
+    {
+      "at": 1792344691655,
+      "attempts": 12
+    },
+    {
+      "at": 1792346491655,
+      "attempts": 1
+    },
+    {
+      "at": 1792348291655,
+      "attempts": 6
+    },
+    {
+      "at": 1792350091655,
+      "attempts": 79
+    },
+    {
+      "at": 1792351891655,
+      "attempts": 73
+    },
+    {
+      "at": 1792353691655,
+      "attempts": 32
+    },
+    {
+      "at": 1792355491655,
+      "attempts": 37
+    },
+    {
+      "at": 1792357291655,
+      "attempts": 46
+    },
+    {
+      "at": 1792359091655,
+      "attempts": 42
+    },
+    {
+      "at": 1792360891655,
+      "attempts": 18
+    },
+    {
+      "at": 1792362691655,
+      "attempts": 15
+    },
+    {
+      "at": 1792364491655,
+      "attempts": 33
+    },
+    {
+      "at": 1792366291655,
+      "attempts": 33
+    },
+    {
+      "at": 1792368091655,
+      "attempts": 41
+    },
+    {
+      "at": 1792369891655,
+      "attempts": 41
+    },
+    {
+      "at": 1792371691655,
+      "attempts": 18
+    },
+    {
+      "at": 1792373491655,
+      "attempts": 14
+    },
+    {
+      "at": 1792375291655,
+      "attempts": 18
+    },
+    {
+      "at": 1792377091655,
+      "attempts": 78
+    },
+    {
+      "at": 1792378891655,
+      "attempts": 9
+    },
+    {
+      "at": 1792380691655,
+      "attempts": 27
+    },
+    {
+      "at": 1792382491655,
+      "attempts": 22
+    }
+  ],
+  "topCountries": [
+    {
+      "name": "The Netherlands",
+      "attempts": 391
+    },
+    {
+      "name": "France",
+      "attempts": 330
+    },
+    {
+      "name": "United States",
+      "attempts": 230
+    },
+    {
+      "name": "Andorra",
+      "attempts": 143
+    },
+    {
+      "name": "Iran",
+      "attempts": 105
+    },
+    {
+      "name": "Switzerland",
+      "attempts": 66
+    },
+    {
+      "name": "China",
+      "attempts": 60
+    },
+    {
+      "name": "Vietnam",
+      "attempts": 54
+    },
+    {
+      "name": "Russia",
+      "attempts": 40
+    },
+    {
+      "name": "Macao",
+      "attempts": 34
+    }
+  ],
+  "topUsernames": [
+    {
+      "name": "root",
+      "attempts": 827
+    },
+    {
+      "name": "admin",
+      "attempts": 93
+    },
+    {
+      "name": "ubuntu",
+      "attempts": 34
+    },
+    {
+      "name": "deploy",
+      "attempts": 20
+    },
+    {
+      "name": "dev",
+      "attempts": 18
+    },
+    {
+      "name": "user",
+      "attempts": 17
+    },
+    {
+      "name": "debian",
+      "attempts": 16
+    },
+    {
+      "name": "ftpuser",
+      "attempts": 12
+    }
+  ],
+  "recent": [
+    {
+      "at": 1792384159407,
+      "ip": "193.47.62.69",
+      "username": "root",
+      "port": "60432",
+      "isp": "BestDC Limited",
+      "location": "Andorra la Vella, Andorra la Vella"
+    },
+    {
+      "at": 1792383775085,
+      "ip": "45.148.10.151",
+      "username": "root",
+      "port": "62620",
+      "isp": "Techoff SRV Limited",
+      "location": "North Holland, Amsterdam"
+    },
+    {
+      "at": 1792383123767,
+      "ip": "139.19.117.129",
+      "username": "admin",
+      "port": "47632",
+      "isp": "Verein zur Foerderung eines Deutschen Forschungsnetzes e.V.",
+      "location": "Saarland, Saarbrücken"
+    },
+    {
+      "at": 1792383004493,
+      "ip": "193.47.62.69",
+      "username": "root",
+      "port": "63158",
+      "isp": "BestDC Limited",
+      "location": "Andorra la Vella, Andorra la Vella"
+    },
+    {
+      "at": 1792382625005,
+      "ip": "109.160.32.30",
+      "username": "user50",
+      "port": "42646",
+      "isp": "TechTies Inc.",
+      "location": "North Holland, Amsterdam"
+    },
+    {
+      "at": 1792382620137,
+      "ip": "109.160.32.30",
+      "username": "iongrade",
+      "port": "42598",
+      "isp": "TechTies Inc.",
+      "location": "North Holland, Amsterdam"
+    },
+    {
+      "at": 1792382614037,
+      "ip": "109.160.32.30",
+      "username": "spy",
+      "port": "40076",
+      "isp": "TechTies Inc.",
+      "location": "North Holland, Amsterdam"
+    },
+    {
+      "at": 1792382068350,
+      "ip": "2.57.121.25",
+      "username": "admin",
+      "port": "28410",
+      "isp": "Unmanaged LTD",
+      "location": "England, Rushden"
+    },
+    {
+      "at": 1792382010851,
+      "ip": "109.160.32.30",
+      "username": "user30",
+      "port": "48536",
+      "isp": "TechTies Inc.",
+      "location": "North Holland, Amsterdam"
+    },
+    {
+      "at": 1792382005286,
+      "ip": "109.160.32.30",
+      "username": "user88",
+      "port": "54524",
+      "isp": "TechTies Inc.",
+      "location": "North Holland, Amsterdam"
+    },
+    {
+      "at": 1792382000253,
+      "ip": "109.160.32.30",
+      "username": "thaskins",
+      "port": "54430",
+      "isp": "TechTies Inc.",
+      "location": "North Holland, Amsterdam"
+    },
+    {
+      "at": 1792381396980,
+      "ip": "109.160.32.30",
+      "username": "system1",
+      "port": "42944",
+      "isp": "TechTies Inc.",
+      "location": "North Holland, Amsterdam"
+    }
+  ]
+}
