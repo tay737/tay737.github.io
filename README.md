@@ -33,10 +33,7 @@ screen, and make the work one click away.
 - [Projects grid](#projects-grid)
 - [Design system](#design-system)
 - [Getting started](#getting-started)
-- [Scripts](#scripts)
-- [Deployment](#deployment)
 - [Repository layout](#repository-layout)
-- [Limitations](#limitations)
 - [Disclaimer](#disclaimer)
 
 ---
@@ -130,25 +127,6 @@ that API is down.
 `src/data/credly.json` with name, issuer, issue date, image, verification URL
 and up to four skills, newest first. Six badges are currently published.
 
-**Threat telemetry** — `scripts/sync-threat.mjs` queries seven panels of a
-Grafana public dashboard over its public panel-query API (`/api/public/
-dashboards/<token>/panels/<id>/query`) and assembles `src/data/threat.json`: a
-24-hour total, unique IP count, country count, 46 map points, a 48-bucket
-timeline, top countries, top usernames and the 12 most recent attempts.
-
-Both scripts share the same failure rule: on any error they **warn and keep the
-existing snapshot** instead of failing the build or emptying the page. A stale
-badge list is better than a blank one.
-
-> [!NOTE]
-> The threat panel is a snapshot of an SSH honeypot that has since been retired,
-> so it now renders the last successful pull — 19 October 2026 — rather than live
-> traffic, and the dashboard's origin currently answers `530`, so the sync cannot
-> refresh it. Grafana
-> serves dashboards with `X-Frame-Options: deny` and its `/d-solo` routes need a
-> session, which is why the panels are reimplemented natively here instead of
-> iframed.
-
 ---
 
 ## Projects grid
@@ -196,59 +174,6 @@ different fill in each theme to stay readable.
 
 ---
 
-## Getting started
-
-```bash
-npm install
-
-npm run dev       # http://localhost:3000, bound to 0.0.0.0
-npm run build     # runs both syncs, then builds to dist/
-npm run preview   # serve the production build
-```
-
-There is no `.env` and no configuration: the GitHub username lives in
-`src/data.ts`, the Credly username and the Grafana dashboard URL/token live in
-their respective sync scripts. To point the site at a different account, change
-those constants.
-
-`npm run dev` skips the syncs on purpose — development should not depend on
-Credly or Grafana being reachable.
-
----
-
-## Scripts
-
-| Command | What it does |
-| --- | --- |
-| `npm run dev` | Vite dev server on port 3000 |
-| `npm run build` | `prebuild` syncs both snapshots, then builds |
-| `npm run preview` | Preview the built output |
-| `npm run lint` | `tsc --noEmit` — the type check is the linter |
-| `npm run sync` | Both syncs in order |
-| `npm run sync:credly` | Refresh `src/data/credly.json` |
-| `npm run sync:threat` | Refresh `src/data/threat.json` |
-| `npm run world` | Regenerate the dotted world map |
-| `npm run clean` | Remove `dist/` |
-| `npm run deploy` | Build, then publish `dist/` with `gh-pages` |
-
----
-
-## Deployment
-
-GitHub Pages, from the `gh-pages` branch, built with `base: './'` so the site
-works from a project path as well as the domain root.
-
-```bash
-npm run deploy
-```
-
-That runs the build (and therefore both syncs), then pushes `dist/` via
-`gh-pages -d dist`. `dist/` is committed in this repository too — the deployed
-output is versioned alongside the source, so a build from any commit can be
-diffed against what was published.
-
----
-
 ## Repository layout
 
 ```text
@@ -262,26 +187,6 @@ scripts/                    sync-credly, sync-threat, generate-world-dots
 public/icons/               brand icons served from the site
 dist/                       committed build output published to Pages
 ```
-
----
-
-## Limitations
-
-- **No tests.** Correctness is enforced by `tsc --noEmit` and by looking at the
-  page; there is no test suite.
-- **The Grafana token is a committed constant.** It is a *public dashboard*
-  token, designed to be embedded and readable by anyone, but it is still a
-  credential in the source tree and cannot be rotated without a code change.
-- **The telemetry snapshot is frozen** now that the honeypot is retired: the last
-  pull is 19 October 2026, the dashboard host answers `530`, and the panel
-  silently keeps whatever was there rather than saying it is stale.
-- **Runtime data is unauthenticated.** The GitHub call is subject to per-IP rate
-  limits, which is why the cache exists; a visitor over the limit sees no cards.
-- **`dist/` is tracked**, so every deploy commit contains generated bundles.
-  Convenient for auditing, noisy in history.
-- **Copy lives in components**, not in `src/data.ts`, so editing wording means
-  editing the section that renders it.
-
 ---
 
 ## Disclaimer
